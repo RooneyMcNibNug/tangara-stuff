@@ -1,5 +1,4 @@
 # tangara-stuff
-Various items to manage the Tangara portable music player
 
 I have some scripts saved on the root directory of the SD card. This is basically the flow I use to organize, sanatize, and load music on there.
 
@@ -49,3 +48,9 @@ for file in *.flac; metaflac --list $file | grep ALBUMARTIST; end
 7. Insert the SD back into the Tangara and **Gear Icon > Database > Update now**
 
 8. Enjoy
+
+_________
+
+Notes/Reccomendations:
+
+- I have "Auto Update" toggled OFF for Database indexing, because I have a large library and noticed some stuttering during playback when indexing would happen to kick off with that on.
