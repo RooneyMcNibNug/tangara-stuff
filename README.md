@@ -6,6 +6,7 @@ I have some scripts saved on the root directory of the SD card. This is basicall
 ```
 beet import -C ~/Music
 ```
+The `-C` is for "don’t copy imported files to your music directory; leave them where they are" - I have a nicely structured local library at `~Music`, so I prefer to make sure the metedata right using `beet`, but I don't want it controlling the location of files (edit in plce, please).
 
 2. When that's done, I move the music over to the SD from my Tangara.
    
