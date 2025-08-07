@@ -49,7 +49,6 @@ for file in *.flac; metaflac --list $file | grep ALBUMARTIST; end
 7. Insert the SD back into the Tangara and **Gear Icon > Database > Update now**
 
 8. Enjoy
-9. 
 
 NOTE: I've been having issues with some database indexing and some thing have gone amiss, and this might be due to more flac metadata issues.
 
