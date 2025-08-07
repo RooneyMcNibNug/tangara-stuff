@@ -49,6 +49,19 @@ for file in *.flac; metaflac --list $file | grep ALBUMARTIST; end
 7. Insert the SD back into the Tangara and **Gear Icon > Database > Update now**
 
 8. Enjoy
+9. 
+
+NOTE: I've been having issues with some database indexing and some thing have gone amiss, and this might be due to more flac metadata issues.
+
+YMMV, but the following will optionally remove your embedded album art and relateled metadata safely, since it oculd cause issues (and you can't see it on your Tangara, anyways):
+
+```
+for file in (find ./Music/ -name "*.flac"); echo "Processing: $file"; metaflac --remove --block-type=PICTURE,PADDING --dont-use-padding "$file"; end
+```
+```
+for file in (find ./Music/ -type f -name "*.flac"); echo "Processing: $file"; metaflac --remove-tag=COVERART --dont-use-padding "$file"; end
+```
+
 
 _________
 
